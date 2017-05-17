@@ -15,7 +15,7 @@ $(document).ready(function () {
 
             var star = product.customerReviewAverage;
             $("#starRating").empty();
-            for (i = 0; i < star; i++) {
+            for (i = 0; i < parseInt(star); i++) {
                 var $span = $('<span class="glyphicon glyphicon-star"></span>');
                 $("#starRating").append($span);
             }
