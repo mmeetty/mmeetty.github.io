@@ -6,7 +6,6 @@ $(document).ready(function () {
     // get the data
     $.getJSON(baseUrl, function (data) {
         // remove any old links
-        console.log(data.categories);
         $("#product").empty();
         $.each(data.products, function (i, product) {
             var $tr = $("<tr></tr>");

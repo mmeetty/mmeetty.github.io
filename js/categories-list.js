@@ -6,7 +6,6 @@ $(document).ready(function () {
     // get the data
     $.getJSON(baseUrl, function (data) {
         // remove any old links
-        console.log(data.categories);
         $("#category").empty();
         $.each(data.categories, function (i, category) {
             var $anchor = $("<a href='products-list.html'></a>");

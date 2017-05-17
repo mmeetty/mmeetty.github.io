@@ -6,7 +6,6 @@ $(document).ready(function () {
     // get the data
     $.getJSON(baseUrl, function (data) {
         // remove any old links
-        console.log(data.categories);
         $.each(data.products, function (i, product) {
             // update image url
             $("#productImg").attr("src", product.largeImage);
@@ -26,7 +25,7 @@ $(document).ready(function () {
             $("#starRating").append(star + " stars");
         });
 
-
+        // validate inputs then submit
         $("#btnSubmit").click(function () {
 
             $("#form").validate({
